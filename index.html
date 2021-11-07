@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="index.js"></script>
+    <script src="dist/bundle.js"></script>
 </head>
 <body>
-
+    <my-leaf
+      item='{
+        "id": 1,
+        "items": [
+            {
+                "id": 2,
+                "items": [
+                    {
+                        "id": 3
+                    },
+                    {
+                        "id": 4,
+                        "items": [
+                            {
+                                "id": 5
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+      }'
+    ></my-leaf>
 </body>
 </html>
